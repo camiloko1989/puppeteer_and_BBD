@@ -1,0 +1,118 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652328939883' stop='1652328946867'>
+    <name>Logging in</name>
+    <title>Logging in</title>
+    <test-cases>
+        <test-case start='1652328939885' status='passed' stop='1652328946462'>
+            <name>Scenario Outline for Login {"Email":"agent@phptravels.com","Password":"demoagent"}</name>
+            <title>Scenario Outline for Login {"Email":"agent@phptravels.com","Password":"demoagent"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1652328941066' status='passed' stop='1652328943341'>
+                    <name>Given Im on the main page </name>
+                    <title>Given Im on the main page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652328941066' status='passed' stop='1652328943341'>
+                            <name>loginPage: visit </name>
+                            <title>loginPage: visit </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652328941066' status='passed' stop='1652328943157'>
+                                    <name>I am on page "login"</name>
+                                    <title>I am on page "login"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328943157' status='passed' stop='1652328943340'>
+                                    <name>I wait for element "//div[@class='menu-wrapper']"</name>
+                                    <title>I wait for element "//div[@class='menu-wrapper']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328943340' status='passed' stop='1652328943341'>
+                                    <name>I see in current url "login"</name>
+                                    <title>I see in current url "login"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1652328943341' status='passed' stop='1652328945203'>
+                    <name>When I fill the form with my agent@phptravels.com and my demoagent </name>
+                    <title>When I fill the form with my agent@phptravels.com and my demoagent </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652328943342' status='passed' stop='1652328945203'>
+                            <name>loginPage: login "agent@phptravels.com", "demoagent"</name>
+                            <title>loginPage: login "agent@phptravels.com", "demoagent"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652328943342' status='passed' stop='1652328943355'>
+                                    <name>I wait for element "input[placeholder='Email']"</name>
+                                    <title>I wait for element "input[placeholder='Email']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328943355' status='passed' stop='1652328944213'>
+                                    <name>I fill field "input[placeholder='Email']", "agent@phptravels.com"</name>
+                                    <title>I fill field "input[placeholder='Email']", "agent@phptravels.com"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328944213' status='passed' stop='1652328944693'>
+                                    <name>I fill field "input[placeholder='Password']", "demoagent"</name>
+                                    <title>I fill field "input[placeholder='Password']", "demoagent"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328944694' status='passed' stop='1652328944848'>
+                                    <name>I click "(//button[1][@type="submit"])[1]"</name>
+                                    <title>I click "(//button[1][@type="submit"])[1]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328944848' status='passed' stop='1652328945203'>
+                                    <name>I save screenshot "login.png"</name>
+                                    <title>I save screenshot "login.png"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1652328945203' status='passed' stop='1652328946462'>
+                    <name>Then I should see the dashboard page </name>
+                    <title>Then I should see the dashboard page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652328945203' status='passed' stop='1652328946462'>
+                            <name>loginPage: validateLogin </name>
+                            <title>loginPage: validateLogin </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652328945203' status='passed' stop='1652328946452'>
+                                    <name>I wait for element "//h2[contains(text(), 'Hi,')]", 4</name>
+                                    <title>I wait for element "//h2[contains(text(), 'Hi,')]", 4</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652328946452' status='passed' stop='1652328946462'>
+                                    <name>I wait for element "//div[@class='menu-wrapper']", 4</name>
+                                    <title>I wait for element "//div[@class='menu-wrapper']", 4</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

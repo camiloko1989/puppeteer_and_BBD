@@ -1,0 +1,301 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652329379003' stop='1652329394326'>
+    <name>Booking a flight</name>
+    <title>Booking a flight</title>
+    <test-cases>
+        <test-case start='1652329379006' status='failed' stop='1652329392964'>
+            <name>Booking a flight with proper dates {"From":"Paris","To":"Bogota","DepartureDate":"20-11-2022","Passengers":"5"}</name>
+            <title>Booking a flight with proper dates {"From":"Paris","To":"Bogota","DepartureDate":"20-11-2022","Passengers":"5"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1652329379994' status='passed' stop='1652329383937'>
+                    <name>Given Im already logged with my email and my password </name>
+                    <title>Given Im already logged with my email and my password </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652329379994' status='passed' stop='1652329381786'>
+                            <name>loginPage: visit </name>
+                            <title>loginPage: visit </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329379995' status='passed' stop='1652329381767'>
+                                    <name>I am on page "login"</name>
+                                    <title>I am on page "login"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329381768' status='passed' stop='1652329381779'>
+                                    <name>I wait for element "//div[@class='menu-wrapper']"</name>
+                                    <title>I wait for element "//div[@class='menu-wrapper']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329381779' status='passed' stop='1652329381785'>
+                                    <name>I see in current url "login"</name>
+                                    <title>I see in current url "login"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1652329381786' status='passed' stop='1652329383937'>
+                            <name>loginPage: login "agent@phptravels.com", "demoagent"</name>
+                            <title>loginPage: login "agent@phptravels.com", "demoagent"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329381786' status='passed' stop='1652329381798'>
+                                    <name>I wait for element "input[placeholder='Email']"</name>
+                                    <title>I wait for element "input[placeholder='Email']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329381798' status='passed' stop='1652329382920'>
+                                    <name>I fill field "input[placeholder='Email']", "agent@phptravels.com"</name>
+                                    <title>I fill field "input[placeholder='Email']", "agent@phptravels.com"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329382921' status='passed' stop='1652329383418'>
+                                    <name>I fill field "input[placeholder='Password']", "demoagent"</name>
+                                    <title>I fill field "input[placeholder='Password']", "demoagent"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329383418' status='passed' stop='1652329383561'>
+                                    <name>I click "(//button[1][@type="submit"])[1]"</name>
+                                    <title>I click "(//button[1][@type="submit"])[1]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329383561' status='passed' stop='1652329383937'>
+                                    <name>I save screenshot "login.png"</name>
+                                    <title>I save screenshot "login.png"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1652329383937' status='passed' stop='1652329386188'>
+                    <name>Given I clicked on flight link </name>
+                    <title>Given I clicked on flight link </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652329383938' status='passed' stop='1652329385954'>
+                            <name>loginPage: validateLogin </name>
+                            <title>loginPage: validateLogin </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329383938' status='passed' stop='1652329385944'>
+                                    <name>I wait for element "//h2[contains(text(), 'Hi,')]", 4</name>
+                                    <title>I wait for element "//h2[contains(text(), 'Hi,')]", 4</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329385945' status='passed' stop='1652329385954'>
+                                    <name>I wait for element "//div[@class='menu-wrapper']", 4</name>
+                                    <title>I wait for element "//div[@class='menu-wrapper']", 4</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1652329385954' status='passed' stop='1652329386013'>
+                            <name>navBar: validateNaveBarIsPresent </name>
+                            <title>navBar: validateNaveBarIsPresent </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329385954' status='passed' stop='1652329385971'>
+                                    <name>I wait for element ".menu-wrapper"</name>
+                                    <title>I wait for element ".menu-wrapper"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329385971' status='passed' stop='1652329385986'>
+                                    <name>I wait for element "//a[normalize-space()='Home']"</name>
+                                    <title>I wait for element "//a[normalize-space()='Home']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329385986' status='passed' stop='1652329385999'>
+                                    <name>I wait for element "//a[normalize-space()='Hotels']"</name>
+                                    <title>I wait for element "//a[normalize-space()='Hotels']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329385999' status='passed' stop='1652329386013'>
+                                    <name>I wait for element "//a[normalize-space()='flights']"</name>
+                                    <title>I wait for element "//a[normalize-space()='flights']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1652329386013' status='passed' stop='1652329386188'>
+                            <name>navBar: selectMenuItem "flights"</name>
+                            <title>navBar: selectMenuItem "flights"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329386013' status='passed' stop='1652329386187'>
+                                    <name>I click "//a[normalize-space()='flights']"</name>
+                                    <title>I click "//a[normalize-space()='flights']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1652329386188' status='passed' stop='1652329387903'>
+                    <name>Given Im on the flight page </name>
+                    <title>Given Im on the flight page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652329386188' status='passed' stop='1652329387903'>
+                            <name>flightPage: validatePage </name>
+                            <title>flightPage: validatePage </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329386188' status='passed' stop='1652329387748'>
+                                    <name>I am on page "flights"</name>
+                                    <title>I am on page "flights"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329387748' status='passed' stop='1652329387775'>
+                                    <name>I wait for element ".main_search"</name>
+                                    <title>I wait for element ".main_search"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329387776' status='passed' stop='1652329387790'>
+                                    <name>I wait for element "#autocomplete"</name>
+                                    <title>I wait for element "#autocomplete"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329387791' status='passed' stop='1652329387825'>
+                                    <name>I wait for element "#autocomplete2"</name>
+                                    <title>I wait for element "#autocomplete2"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329387825' status='passed' stop='1652329387851'>
+                                    <name>I wait for element "#departure"</name>
+                                    <title>I wait for element "#departure"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329387851' status='passed' stop='1652329387893'>
+                                    <name>I wait for element ".dropdown-toggle.dropdown-btn.waves-effect"</name>
+                                    <title>I wait for element ".dropdown-toggle.dropdown-btn.waves-effect"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329387893' status='passed' stop='1652329387903'>
+                                    <name>I wait for element "#flights-search"</name>
+                                    <title>I wait for element "#flights-search"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1652329387903' status='failed' stop='1652329392963'>
+                    <name>When I fill the form with Paris and Bogota and 20-11-2022 and 5 and I click the search button </name>
+                    <title>When I fill the form with Paris and Bogota and 20-11-2022 and 5 and I click the search button </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1652329387903' status='failed' stop='1652329392963'>
+                            <name>flightPage: selectFlight "Paris", "Bogota", "20-11-2022", "5"</name>
+                            <title>flightPage: selectFlight "Paris", "Bogota", "20-11-2022", "5"</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1652329387903' status='passed' stop='1652329388540'>
+                                    <name>I fill field "#autocomplete", "Paris"</name>
+                                    <title>I fill field "#autocomplete", "Paris"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329388541' status='passed' stop='1652329388885'>
+                                    <name>I click ".autocomplete-result[data-index='0']"</name>
+                                    <title>I click ".autocomplete-result[data-index='0']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329388885' status='passed' stop='1652329389736'>
+                                    <name>I fill field "#autocomplete2", "Bogota"</name>
+                                    <title>I fill field "#autocomplete2", "Bogota"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329389737' status='passed' stop='1652329389923'>
+                                    <name>I click ".autocomplete-result[data-index='0']"</name>
+                                    <title>I click ".autocomplete-result[data-index='0']"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329389923' status='passed' stop='1652329390844'>
+                                    <name>I fill field "#departure", "20-11-2022"</name>
+                                    <title>I fill field "#departure", "20-11-2022"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329390844' status='passed' stop='1652329391185'>
+                                    <name>I click ".dropdown-toggle.dropdown-btn.waves-effect"</name>
+                                    <title>I click ".dropdown-toggle.dropdown-btn.waves-effect"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329391185' status='passed' stop='1652329391547'>
+                                    <name>I click "(//i[@class='la la-plus'])[1]"</name>
+                                    <title>I click "(//i[@class='la la-plus'])[1]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329391547' status='passed' stop='1652329391922'>
+                                    <name>I click "(//i[@class='la la-plus'])[1]"</name>
+                                    <title>I click "(//i[@class='la la-plus'])[1]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329391922' status='passed' stop='1652329392253'>
+                                    <name>I click "(//i[@class='la la-plus'])[1]"</name>
+                                    <title>I click "(//i[@class='la la-plus'])[1]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329392253' status='passed' stop='1652329392599'>
+                                    <name>I click "(//i[@class='la la-plus'])[1]"</name>
+                                    <title>I click "(//i[@class='la la-plus'])[1]"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1652329392599' status='passed' stop='1652329392959'>
+                                    <name>I click "#flights-search"</name>
+                                    <title>I click "#flights-search"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='16d65bc2-2d3e-4831-8a5e-8d30fec84be0-attachment.png' type='image/png' size='190123'/>
+            </attachments>
+            <failure>
+                <message>results is not defined</message>
+                <stack-trace>ReferenceError: results is not defined
+                    at Object.validateFlight (C:\Users\camil\OneDrive\Documents\Platzi\Puppeteer\Proyecto_BDD\pages\flightPage.js:50:26)
+                    at MetaStep.run (C:\Users\camil\OneDrive\Documents\Platzi\Puppeteer\Proyecto_BDD\node_modules\codeceptjs\lib\step.js:274:19)
+                    at C:\Users\camil\OneDrive\Documents\Platzi\Puppeteer\Proyecto_BDD\step_definitions\bookingSteps.js:31:16
+                    at runSteps (C:\Users\camil\OneDrive\Documents\Platzi\Puppeteer\Proyecto_BDD\node_modules\codeceptjs\lib\interfaces\gherkin.js:62:15)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
